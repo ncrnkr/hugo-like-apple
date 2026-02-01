@@ -2,6 +2,8 @@
 
 Apple-inspired Hugo theme for a personal portfolio and blog.
 
+![Theme preview](screenshot.png)
+
 ## Features
 - Portfolio-focused homepage with projects, writing, and about sections
 - Clean editorial blog layouts
