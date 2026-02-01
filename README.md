@@ -1,4 +1,4 @@
-# like apple
+# like Apple
 
 Apple-inspired Hugo theme for a personal portfolio and blog.
 
@@ -10,11 +10,7 @@ Apple-inspired Hugo theme for a personal portfolio and blog.
 - Smooth motion, gradients, and glass accents
 - Responsive design
 
-## Requirements
-- Hugo >= 0.112.0
-
 ## Installation
-Choose one of the options below after you upload the theme to GitHub. Replace `<THEME_REPO_URL>` with your repo URL (e.g. `https://github.com/your-name/like-apple`).
 
 ### Option A: Git submodule (recommended)
 ```bash
