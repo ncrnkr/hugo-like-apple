@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-title">{{ .Site.Title }}</p>
+      {{ with .Site.Params.description }}
+        <p class="footer-description">{{ . }}</p>
+      {{ end }}
+    </div>
+    <div class="footer-links">
+      {{ range .Site.Params.social }}
+        <a href="{{ .url }}" rel="me">{{ .name }}</a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="container footer-meta">
+    <p>© {{ now.Format "2006" }} {{ .Site.Title }}. Built with Hugo.</p>
+  </div>
+</footer>

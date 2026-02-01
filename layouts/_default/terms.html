@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="section page-intro">
+  <div class="container reveal" data-reveal>
+    <p class="eyebrow">Explore</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cards">
+      {{ range $i, $p := .Data.Terms.Alphabetical }}
+        {{ $delay := add (mod $i 6) 1 }}
+        <article class="card reveal reveal-delay-{{ $delay }}" data-reveal>
+          <h3><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></h3>
+          <p>{{ .Count }} posts</p>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ .Site.BaseURL | relURL }}">
+      <span class="brand-name">{{ .Site.Title }}</span>
+    </a>
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span></span><span></span>
+      </button>
+      <ul class="nav-list" id="primary-nav" data-nav-list>
+        {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+        {{ if not .Site.Menus.main }}
+          <li><a href="{{ "#projects" | relURL }}">Projects</a></li>
+          <li><a href="{{ "#writing" | relURL }}">Writing</a></li>
+          <li><a href="{{ "#about" | relURL }}">About</a></li>
+          <li><a href="{{ "#contact" | relURL }}">Contact</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

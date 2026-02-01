@@ -1,0 +1,12 @@
+name = "like apple"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Apple-inspired Hugo theme for a personal portfolio + blog."
+homepage = "https://example.com/like-apple"
+tags = ["portfolio", "blog", "clean", "minimal", "apple"]
+features = ["responsive", "blog", "portfolio", "dark-on-light"]
+min_version = "0.112.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://example.com"

@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="section page-intro">
+  <div class="container reveal" data-reveal>
+    <p class="eyebrow">{{ .Section | title }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p class="lead">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="post-list">
+      {{ range $i, $p := .Pages }}
+        {{ $delay := add (mod $i 6) 1 }}
+        <article class="post-row reveal reveal-delay-{{ $delay }}" data-reveal>
+          <div>
+            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary }}</p>
+          </div>
+          <a class="text-link" href="{{ .RelPermalink }}">Read</a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

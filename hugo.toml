@@ -1,0 +1,70 @@
+baseURL = "https://example.com/"
+title = "Like Apple"
+languageCode = "en-us"
+summaryLength = 20
+
+contentDir = "exampleSite/content"
+dataDir = "exampleSite/data"
+staticDir = ["exampleSite/static", "static"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  description = "Designer & developer building calm, useful products."
+  heroTitle = "Hello, I'm Alex."
+  heroSubtitle = "I design minimal digital experiences with a human touch."
+  heroCtaText = "See my work"
+  heroCtaLink = "#projects"
+  heroSecondaryText = "Start a project"
+  heroSecondaryLink = "#contact"
+  email = "hello@example.com"
+  location = "Munich, Germany"
+  now = "Exploring spatial audio experiences"
+  projectsLink = "#contact"
+  projectsLinkText = "Request full case studies"
+  aboutTitle = "Built on precision and empathy."
+  aboutLead = "Great interfaces feel invisible: focused, intuitive, and steady."
+  aboutLink = "#contact"
+  aboutLinkText = "Work with me"
+  contactLead = "I’m available for select product, UX, and brand collaborations."
+  calendly = "https://calendly.com"
+
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/"
+  [[params.social]]
+    name = "LinkedIn"
+    url = "https://linkedin.com/"
+  [[params.social]]
+    name = "Email"
+    url = "mailto:hello@example.com"
+
+  [[params.projectHighlights]]
+    title = "Ambient Notes"
+    description = "A calm note-taking app that feels like paper."
+    url = "https://example.com"
+    tag = "Product"
+  [[params.projectHighlights]]
+    title = "Studio North"
+    description = "Visual identity for a creative consultancy."
+    url = "https://example.com"
+    tag = "Brand"
+
+[[menu.main]]
+  name = "Projects"
+  url = "#projects"
+  weight = 1
+[[menu.main]]
+  name = "Writing"
+  url = "#writing"
+  weight = 2
+[[menu.main]]
+  name = "About"
+  url = "#about"
+  weight = 3
+[[menu.main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 4
